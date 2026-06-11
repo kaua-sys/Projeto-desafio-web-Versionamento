@@ -15,13 +15,14 @@ console.log("Sua idade é: " + idade);
 console.log('Seu nome é: ',nome);
 console.log(`Sua altura é:   ${altura}`); 
 
-//Teste do If
+//Teste do if
 if (idade >=18) {
      console.log("Maior de Idade")  
 }  else {
     console.log("Menor de Idade")
 }
 
+//Teste do else e do else if
 if (altura > 1.75) {
     console.log("Acima da Média")
 } else if (altura = 1.75) {
