@@ -10,13 +10,13 @@ formDados.addEventListener('submit', (evt)=>{
 
     let distancia = parseFloat(objFormDados.get('distancia'))
     let consumo = parseFloat(objFormDados.get('consumo'))
-    let preço = parseFloat(objFormDados.get('preço'))
+    let preco = parseFloat(objFormDados.get('preco'))
 
-    let quantidade = (distancia/consumo)
-    let valor = (preço*quantidade)
+    let quantidade = (distancia / consumo)
+    let valor = (preco * quantidade)
 
-    divResultado.innerHTML = `A quantidade de combustivel é de: ${quantidade.toFixed(2).replace('.',',')}m²,
-     O valor total a pagar é de: ${parseFloat(valor).toFixed(2).replace('.',',')}l`
+    divResultado.innerHTML = `A quantidade de combustivel é de: ${quantidade.toFixed(2).replace('.',',')}Km,
+     O valor total a pagar é de: R$${parseFloat(valor).toFixed(2).replace('.',',')}`
 
         formDados.reset()
 })
