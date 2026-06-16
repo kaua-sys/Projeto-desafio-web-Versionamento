@@ -8,14 +8,14 @@ formDados.addEventListener('submit', (evt)=>{
 
     const objFormDados = new FormData (formDados)
 
-    let n = parseFloat(objFormDados.get('num'))
-
+    let senha = objFormDados.get('senha')
+    let senhaCorreta = "1234"
     let verificar = ""
 
-    if (n % 3 == 0 && n % 7 == 0 ) {
-        verificar = "Divisivel por 3 e 7"
+    if (senha === senhaCorreta ) {
+        verificar = 'Acesso Permitido'
     } else {
-        verificar = "Não é divisivel por 3 e 7"
+        verificar = "Acesso Negado"
     }
 
     divResultado.innerHTML = verificar
