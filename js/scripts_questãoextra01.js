@@ -8,7 +8,7 @@ formDados.addEventListener('submit', (evt)=>{
 
     const objFormDados = new FormData (formDados)
 
-    let n = parseFloat(objFormDados.get('num'))
+    let n = parseInt(objFormDados.get('num'))
 
     let verificar = ""
 
