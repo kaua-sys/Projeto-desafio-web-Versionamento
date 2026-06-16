@@ -10,9 +10,15 @@ formDados.addEventListener('submit', (evt)=>{
 
     let n = parseFloat(objFormDados.get('num'))
 
-    let verificar = 
+    let verificar = ""
 
-    divResultado.innerHTML = `A média dos números digitados é: ${media.toFixed(2).replace('.',',')}`
+    if (n % 3 == 0 && n % 7 == 0 ) {
+        verificar = "Divisivel por 3 e 7"
+    } else {
+        verificar = "Não é divisivel por 3 e 7"
+    }
+
+    divResultado.innerHTML = verificar
 
         formDados.reset()
 })
